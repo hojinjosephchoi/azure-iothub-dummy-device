@@ -5,17 +5,21 @@
 
 - [IoT Hub 만들기](https://docs.microsoft.com/ko-kr/azure/iot-hub/iot-hub-java-java-getstarted#a-namecreate-an-iot-hubaiot-hub-만들기)의 6. 공유 액세스 정책 부분을 참고하여, '연결 문자열-기본키'를 복사합니다.
 - `com.lattekafe.create_device_identity.Main` Class의 `connectionString` 변수 `{yourhubconnectionstring}`에 copy한 후 해당 클래스를 실행합니다.
-	~~~
-	private static final String connectionString = "{yourhubconnectionstring}";
-	~~~
+~~~
+//com.lattekafe.create_device_identity.Main.java 소스파일내
+private static final String connectionString = "{yourhubconnectionstring}";
+~~~
+
 - 출력된 Device Key를 메모합니다.
 
 ## 2. Dummy Sensor 실행하기
 
 - 앞서 가져온 Device Key값을 `com.lattekafe.dummysensor.Main` Class의 `connectionString`변수 `{yourdevicekey}`에 copy한 후 해당 클래스를 실행합니다.
-	~~~
-	String connectionString = "HostName={youriothubname}.azure-devices.net;DeviceId=Device1;SharedAccessKey={yourdevicekey}";
-	~~~
+
+~~~
+com.lattekafe.dummysensor.Main.java 
+String connectionString = "HostName={youriothubname}.azure-devices.net;DeviceId=Device1;SharedAccessKey={yourdevicekey}";
+~~~
 
 ---
 # References
