@@ -17,10 +17,9 @@ private static final String connectionString = "{yourhubconnectionstring}";
 - 앞서 가져온 Device Key값을 `com.lattekafe.dummysensor.Main` Class의 `connectionString`변수 `{yourdevicekey}`에 copy한 후 해당 클래스를 실행합니다.
 
 ~~~
-com.lattekafe.dummysensor.Main.java 
+//com.lattekafe.dummysensor.Main.java 
 String connectionString = "HostName={youriothubname}.azure-devices.net;DeviceId=Device1;SharedAccessKey={yourdevicekey}";
 ~~~
-
 ---
 # References
 
